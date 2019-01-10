@@ -20,7 +20,9 @@ mkdir -p /usr/local/var/mongodb1
 mkdir -p /usr/local/var/mongodb2
 mkdir -p /usr/local/var/mongodb3
 
-ln -sfv /usr/local/opt/mongodb/homebrew.mxcl.mongodb*.plist ~/Library/LaunchAgents/
+ln -sfv /usr/local/opt/mongodb/homebrew.mxcl.mongodb1.plist ~/Library/LaunchAgents/homebrew.mxcl.mongodb1.plist
+ln -sfv /usr/local/opt/mongodb/homebrew.mxcl.mongodb2.plist ~/Library/LaunchAgents/homebrew.mxcl.mongodb2.plist
+ln -sfv /usr/local/opt/mongodb/homebrew.mxcl.mongodb3.plist ~/Library/LaunchAgents/homebrew.mxcl.mongodb3.plist
 
 rm -f /usr/local/var/mongodb1/*.lock
 rm -f /usr/local/var/mongodb2/*.lock
