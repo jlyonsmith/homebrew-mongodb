@@ -17,7 +17,6 @@ if [ "$control_type" == stop ] || [ "$control_type" == restart ]; then
   launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb1.plist
   launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb2.plist
   launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb3.plist
-  pkill -f /usr/local/opt/mongodb/bin/mongod
   sleep 5
 fi
 
