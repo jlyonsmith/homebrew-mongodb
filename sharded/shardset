@@ -14,17 +14,17 @@ fi
 
 if [ "$control_type" == stop ] || [ "$control_type" == restart ]; then
   echo "Stopping MongoDB instances"
-  launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb1.plist
-  launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb2.plist
-  launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongos.plist
-  launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb_shardconfig.plist
+  launchctl unload ~/Library/LaunchAgents/org.lyon-smith.mongodb1.plist
+  launchctl unload ~/Library/LaunchAgents/org.lyon-smith.mongodb2.plist
+  launchctl unload ~/Library/LaunchAgents/org.lyon-smith.mongos.plist
+  launchctl unload ~/Library/LaunchAgents/org.lyon-smith.mongodb_shardconfig.plist
   pkill -f mongod
 fi
 
 if [ "$control_type" == start ] || [ "$control_type" == restart ]; then
   echo "Starting MongoDB instances"
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb1.plist
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb2.plist
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongos.plist
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb_shardconfig.plist
+  launchctl load ~/Library/LaunchAgents/org.lyon-smith.mongodb1.plist
+  launchctl load ~/Library/LaunchAgents/org.lyon-smith.mongodb2.plist
+  launchctl load ~/Library/LaunchAgents/org.lyon-smith.mongos.plist
+  launchctl load ~/Library/LaunchAgents/org.lyon-smith.mongodb_shardconfig.plist
 fi

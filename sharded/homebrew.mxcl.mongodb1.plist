@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>homebrew.mxcl.mongodb1</string>
+  <string>org.lyon-smith.mongodb1</string>
   <key>ProgramArguments</key>
   <array>
     <string>/usr/local/opt/mongodb/bin/mongod</string>

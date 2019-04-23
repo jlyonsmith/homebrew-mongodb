@@ -14,7 +14,7 @@ brew install mongodb
 
 ### Files
 
-* homebrew.mxcl.mongodb#.plist
+* org.lyon-smith.mongodb#.plist
 * mongod#.conf
 
 ### Directories Created

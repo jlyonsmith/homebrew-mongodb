@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>homebrew.mxcl.mongos</string>
+  <string>org.lyon-smith.mongos</string>
   <key>ProgramArguments</key>
   <array>
     <string>/usr/local/opt/mongodb/bin/mongos</string>
