@@ -9,14 +9,14 @@ This script leaves your original single process MongoDB instance running and con
 - Homebrew installed. You can find it at [http://brew.sh/](http://brew.sh/)
 - `brew install mongodb`
 
-## Usage
+## Installation
 
 Run the following commands in terminal:
 
 ```bash
 git clone https://github.com/jlyonsmith/homebrew-mongodb.git
 cd homebrew-mongodb
-./setup.sh
+./install.sh
 ```
 
 The MongoDB replica set will run on ports 27018 through 27020.
@@ -36,3 +36,13 @@ rs.PRIMARY>
 ```
 
 Congratulations! You now have a working local replica set with mongodb.
+
+## Removal
+
+You can remove the replica set with:
+
+```bash
+./remove.sh
+```
+
+You'll need to restart the non-replica set MongoDB instance with `brew services restart mongodb`.
