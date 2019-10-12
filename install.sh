@@ -5,14 +5,14 @@ launchctl unload ~/Library/LaunchAgents/org.lyon-smith.mongodb3.plist
 launchctl remove org.lyon-smith.mongodb1
 launchctl remove org.lyon-smith.mongodb2
 launchctl remove org.lyon-smith.mongodb3
-pkill -f /usr/local/opt/mongodb/bin/mongod
+pkill -f /usr/local/opt/mongodb-community/bin/mongod
 sleep 5
 
 rm -f ~/Library/LaunchAgents/org.lyon-smith.mongodb1.plist
 rm -f ~/Library/LaunchAgents/org.lyon-smith.mongodb2.plist
 rm -f ~/Library/LaunchAgents/org.lyon-smith.mongodb3.plist
 
-cp -f *.plist /usr/local/opt/mongodb/
+cp -f *.plist /usr/local/opt/mongodb-community/
 cp -f *.conf /usr/local/etc/
 cp -f replicaset /usr/local/bin/
 
@@ -23,9 +23,9 @@ mkdir -p /usr/local/var/mongodb1
 mkdir -p /usr/local/var/mongodb2
 mkdir -p /usr/local/var/mongodb3
 
-ln -sfv /usr/local/opt/mongodb/org.lyon-smith.mongodb1.plist ~/Library/LaunchAgents/org.lyon-smith.mongodb1.plist
-ln -sfv /usr/local/opt/mongodb/org.lyon-smith.mongodb2.plist ~/Library/LaunchAgents/org.lyon-smith.mongodb2.plist
-ln -sfv /usr/local/opt/mongodb/org.lyon-smith.mongodb3.plist ~/Library/LaunchAgents/org.lyon-smith.mongodb3.plist
+ln -sfv /usr/local/opt/mongodb-community/org.lyon-smith.mongodb1.plist ~/Library/LaunchAgents/org.lyon-smith.mongodb1.plist
+ln -sfv /usr/local/opt/mongodb-community/org.lyon-smith.mongodb2.plist ~/Library/LaunchAgents/org.lyon-smith.mongodb2.plist
+ln -sfv /usr/local/opt/mongodb-community/org.lyon-smith.mongodb3.plist ~/Library/LaunchAgents/org.lyon-smith.mongodb3.plist
 
 rm -f /usr/local/var/mongodb1/*.lock
 rm -f /usr/local/var/mongodb2/*.lock

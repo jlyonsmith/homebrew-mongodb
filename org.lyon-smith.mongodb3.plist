@@ -6,7 +6,7 @@
   <string>org.lyon-smith.mongodb3</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/local/opt/mongodb/bin/mongod</string>
+    <string>/usr/local/opt/mongodb-community/bin/mongod</string>
     <string>--config</string>
     <string>/usr/local/etc/mongod3.conf</string>
   </array>
